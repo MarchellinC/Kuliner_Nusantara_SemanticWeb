@@ -1,0 +1,211 @@
+Nama Makanan,Provinsi,Bahan Utama,Kategori,Rasa
+Mie Aceh,Nanggroe Aceh Darussalam,Mie Terigu,Makanan Berat,Pedas
+Sate Matang,Nanggroe Aceh Darussalam,Daging Sapi,Makanan Berat,Gurih
+Ayam Tangkap,Nanggroe Aceh Darussalam,Daging Ayam,Makanan Berat,Gurih
+Timphan,Nanggroe Aceh Darussalam,Tepung Ketan,Makanan Ringan,Manis
+Bika Ambon,Sumatera Utara,Tepung Tapioka,Makanan Ringan,Manis
+Arsik,Sumatera Utara,Ikan Mas,Makanan Berat,Pedas Asam
+Mie Gomak,Sumatera Utara,Mie Lidi,Makanan Berat,Pedas Gurih
+Lontong Medan,Sumatera Utara,Beras,Makanan Berat,Gurih
+Lemang,Sumatera Utara,Beras Ketan,Makanan Ringan,Gurih
+Anyang,Sumatera Utara,Sayuran,Makanan Ringan,Pedas
+Rendang,Sumatera Barat,Daging Sapi,Makanan Berat,Pedas
+Sate Padang,Sumatera Barat,Daging Sapi,Makanan Berat,Pedas
+Dendeng Batokok,Sumatera Barat,Daging Sapi,Makanan Berat,Pedas
+Ayam Pop,Sumatera Barat,Daging Ayam,Makanan Berat,Gurih
+Soto Padang,Sumatera Barat,Daging Sapi,Makanan Berat,Gurih
+Gulai Itik,Sumatera Barat,Daging Bebek,Makanan Berat,Pedas
+Itik Lado Mudo,Sumatera Barat,Daging Bebek,Makanan Berat,Pedas
+Bika Talago,Sumatera Barat,Tepung Beras,Makanan Ringan,Manis
+Lamang Tapai,Sumatera Barat,Beras Ketan,Makanan Ringan,Manis
+Katupek Pitalah,Sumatera Barat,Beras,Makanan Berat,Gurih
+Gulai Belacan,Riau,Udang,Makanan Berat,Pedas
+Asam Pedas Baung,Riau,Ikan Baung,Makanan Berat,Asam Pedas
+Mie Lendir,Kepulauan Riau,Mie Kuning,Makanan Berat,Manis Gurih
+Roti Jala,Riau,Tepung Terigu,Makanan Ringan,Gurih
+Sop Tunjang,Riau,Tulang Sapi,Makanan Berat,Gurih
+Otak-otak,Kepulauan Riau,Ikan Tenggiri,Makanan Ringan,Gurih
+Sate Senapelan,Riau,Daging Sapi,Makanan Berat,Manis Pedas
+Luti Gendang,Kepulauan Riau,Tepung Terigu,Makanan Ringan,Gurih
+Mie Tarempa,Kepulauan Riau,Mie Terigu,Makanan Berat,Pedas
+Gonggong Rebus,Kepulauan Riau,Siput Laut,Makanan Ringan,Gurih
+Tempoyak,Jambi,Durian Fermentasi,Makanan Pendamping,Asam Manis
+Gulai Tepek Ikan,Jambi,Ikan Gabus,Makanan Berat,Gurih
+Nasi Gemuk,Jambi,Beras,Makanan Berat,Gurih
+Daging Masak Hitam,Jambi,Daging Sapi,Makanan Berat,Manis
+Pempek,Sumatera Selatan,Ikan Tenggiri,Makanan Ringan,Gurih
+Tekwan,Sumatera Selatan,Ikan Tenggiri,Makanan Berat,Gurih
+Model,Sumatera Selatan,Ikan Tenggiri,Makanan Berat,Gurih
+Laksan,Sumatera Selatan,Ikan Tenggiri,Makanan Berat,Gurih
+Celimpungan,Sumatera Selatan,Ikan Tenggiri,Makanan Berat,Gurih
+Burgo,Sumatera Selatan,Tepung Beras,Makanan Ringan,Gurih
+Pendap,Bengkulu,Ikan,Makanan Berat,Pedas
+Lema,Bengkulu,Rebung Fermentasi,Makanan Berat,Asam Pedas
+Bagar Hiu,Bengkulu,Daging Hiu,Makanan Berat,Gurih
+Kue Tat,Bengkulu,Tepung Terigu,Makanan Ringan,Manis
+Lempah Kuning,Bangka Belitung,Ikan Pari,Makanan Berat,Asam Pedas
+Mie Koba,Bangka Belitung,Mie Terigu,Makanan Berat,Gurih
+Pantiaw,Bangka Belitung,Tepung Sagu,Makanan Ringan,Gurih
+Rusip,Bangka Belitung,Ikan Fermentasi,Makanan Pendamping,Asam
+Lakso,Bangka Belitung,Tepung Beras,Makanan Berat,Gurih
+Martabak Bangka,Bangka Belitung,Tepung Terigu,Makanan Ringan,Manis
+Seruit,Lampung,Ikan Sungai,Makanan Berat,Pedas Asam
+Gabing,Lampung,Batang Kelapa Muda,Makanan Berat,Gurih
+Geguduh,Lampung,Pisang,Makanan Ringan,Manis
+Sate Bandeng,Banten,Ikan Bandeng,Makanan Berat,Manis Gurih
+Rabeg,Banten,Daging Kambing,Makanan Berat,Manis Pedas
+Nasi Sumsum,Banten,Beras,Makanan Berat,Gurih
+Kue Jojorong,Banten,Tepung Beras,Makanan Ringan,Manis
+Ketan Bintul,Banten,Beras Ketan,Makanan Ringan,Gurih
+Pecak Bandeng,Banten,Ikan Bandeng,Makanan Berat,Pedas
+Gerem Asem,Banten,Daging Ayam,Makanan Berat,Asam Pedas
+Kerak Telor,DKI Jakarta,Beras Ketan,Makanan Ringan,Gurih
+Soto Betawi,DKI Jakarta,Daging Sapi,Makanan Berat,Gurih
+Nasi Uduk,DKI Jakarta,Beras,Makanan Berat,Gurih
+Ketoprak,DKI Jakarta,Tahu,Makanan Berat,Manis Gurih
+Asinan Betawi,DKI Jakarta,Sayuran,Makanan Ringan,Asam Pedas
+Semur Jengkol,DKI Jakarta,Jengkol,Makanan Berat,Manis
+Roti Buaya,DKI Jakarta,Tepung Terigu,Makanan Ringan,Manis
+Putu Mayang,DKI Jakarta,Tepung Beras,Makanan Ringan,Manis
+Kue Cucur,DKI Jakarta,Tepung Beras,Makanan Ringan,Manis
+Bir Pletok,DKI Jakarta,Rempah,Minuman,Manis
+Karedok,Jawa Barat,Sayuran,Makanan Berat,Pedas Gurih
+Seblak,Jawa Barat,Kerupuk Basah,Makanan Ringan,Pedas
+Batagor,Jawa Barat,Tahu dan Ikan,Makanan Ringan,Gurih
+Surabi,Jawa Barat,Tepung Beras,Makanan Ringan,Manis
+Nasi Timbel,Jawa Barat,Beras,Makanan Berat,Gurih
+Mie Kocok,Jawa Barat,Mie Kuning,Makanan Berat,Gurih
+Tahu Gejrot,Jawa Barat,Tahu,Makanan Ringan,Manis Pedas
+Empal Gentong,Jawa Barat,Daging Sapi,Makanan Berat,Gurih
+Nasi Tutug Oncom,Jawa Barat,Beras dan Oncom,Makanan Berat,Gurih
+Peuyeum,Jawa Barat,Singkong Fermentasi,Makanan Ringan,Manis
+Garang Asem,Jawa Tengah,Daging Ayam,Makanan Berat,Asam Pedas
+Tengkleng,Jawa Tengah,Tulang Kambing,Makanan Berat,Gurih
+Sate Buntel,Jawa Tengah,Daging Kambing,Makanan Berat,Manis
+Nasi Liwet Solo,Jawa Tengah,Beras,Makanan Berat,Gurih
+Lumpia Semarang,Jawa Tengah,Rebung,Makanan Ringan,Manis Gurih
+Tahu Petis,Jawa Tengah,Tahu,Makanan Ringan,Manis Gurih
+Nasi Gandul,Jawa Tengah,Beras,Makanan Berat,Gurih
+Sroto Sokaraja,Jawa Tengah,Daging Sapi,Makanan Berat,Gurih
+Mangut Lele,Jawa Tengah,Ikan Lele,Makanan Berat,Pedas Gurih
+Tempe Mendoan,Jawa Tengah,Tempe,Makanan Ringan,Gurih
+Gudeg,DI Yogyakarta,Nangka Muda,Makanan Berat,Manis
+Sate Klatak,DI Yogyakarta,Daging Kambing,Makanan Berat,Gurih
+Bakpia,DI Yogyakarta,Tepung Terigu,Makanan Ringan,Manis
+Tiwul,DI Yogyakarta,Singkong,Makanan Berat,Manis
+Gatot,DI Yogyakarta,Singkong Fermentasi,Makanan Ringan,Manis
+Krecek,DI Yogyakarta,Kerupuk Kulit Sapi,Makanan Berat,Pedas
+Oseng Mercon,DI Yogyakarta,Daging Sapi,Makanan Berat,Pedas
+Geplak,DI Yogyakarta,Kelapa Parut,Makanan Ringan,Manis
+Yangko,DI Yogyakarta,Tepung Ketan,Makanan Ringan,Manis
+Mie Lethek,DI Yogyakarta,Tepung Singkong,Makanan Berat,Gurih
+Rawon,Jawa Timur,Daging Sapi,Makanan Berat,Gurih
+Rujak Cingur,Jawa Timur,Cingur Sapi,Makanan Berat,Pedas Gurih
+Lontong Balap,Jawa Timur,Beras,Makanan Berat,Gurih
+Soto Lamongan,Jawa Timur,Daging Ayam,Makanan Berat,Gurih
+Sate Madura,Jawa Timur,Daging Ayam,Makanan Berat,Manis
+Pecel Madiun,Jawa Timur,Sayuran,Makanan Berat,Pedas Gurih
+Tahu Tek,Jawa Timur,Tahu,Makanan Berat,Manis Gurih
+Bakso Malang,Jawa Timur,Daging Sapi,Makanan Berat,Gurih
+Nasi Krawu,Jawa Timur,Beras,Makanan Berat,Gurih
+Tahu Campur,Jawa Timur,Tahu dan Daging,Makanan Berat,Manis Gurih
+Ayam Betutu,Bali,Daging Ayam,Makanan Berat,Pedas
+Sate Lilit,Bali,Ikan Tenggiri,Makanan Berat,Gurih
+Lawar,Bali,Sayuran dan Daging,Makanan Berat,Pedas Gurih
+Jukut Undis,Bali,Kacang Hitam,Makanan Berat,Gurih
+Serombotan,Bali,Sayuran,Makanan Ringan,Pedas
+Rujak Kuah Pindang,Bali,Buah-buahan,Makanan Ringan,Pedas Asam
+Nasi Jinggo,Bali,Beras,Makanan Berat,Gurih
+Tum Ayam,Bali,Daging Ayam,Makanan Berat,Gurih
+Komoh,Bali,Daging Babi/Sapi,Makanan Berat,Gurih
+Jaja Laklak,Bali,Tepung Beras,Makanan Ringan,Manis
+Ayam Taliwang,Nusa Tenggara Barat,Daging Ayam,Makanan Berat,Pedas
+Sate Rembiga,Nusa Tenggara Barat,Daging Sapi,Makanan Berat,Manis Pedas
+Plecing Kangkung,Nusa Tenggara Barat,Sayuran,Makanan Pendamping,Pedas
+Bebalung,Nusa Tenggara Barat,Tulang Sapi,Makanan Berat,Gurih
+Nasi Balap Puyung,Nusa Tenggara Barat,Beras,Makanan Berat,Pedas
+Sate Bulayak,Nusa Tenggara Barat,Daging Sapi,Makanan Berat,Gurih
+Ares,Nusa Tenggara Barat,Pelepah Pisang,Makanan Berat,Gurih
+Sate Kere,Nusa Tenggara Barat,Jeroan Sapi,Makanan Berat,Manis
+Taliwang Bakar,Nusa Tenggara Barat,Daging Ayam,Makanan Berat,Pedas
+Jajanan Cerorot,Nusa Tenggara Barat,Tepung Beras,Makanan Ringan,Manis
+Se'i Sapi,Nusa Tenggara Timur,Daging Sapi,Makanan Berat,Gurih
+Catemak Jagung,Nusa Tenggara Timur,Jagung,Makanan Ringan,Gurih
+Jagung Bose,Nusa Tenggara Timur,Jagung,Makanan Berat,Gurih
+Kolo,Nusa Tenggara Timur,Beras,Makanan Berat,Gurih
+Muku Loto,Nusa Tenggara Timur,Pisang Mentah,Makanan Berat,Gurih
+Rumpu Rampe,Nusa Tenggara Timur,Daun Pepaya,Makanan Pendamping,Pedas Pahit
+Jawada,Nusa Tenggara Timur,Tepung Beras,Makanan Ringan,Manis
+Kue Rambut,Nusa Tenggara Timur,Tepung Beras,Makanan Ringan,Manis
+Sate Gurita,Nusa Tenggara Timur,Gurita,Makanan Berat,Gurih
+Ikan Kuah Asam,Nusa Tenggara Timur,Ikan Laut,Makanan Berat,Asam Gurih
+Choi Pan,Kalimantan Barat,Tepung Beras,Makanan Ringan,Gurih
+Mie Kepiting,Kalimantan Barat,Mie Kuning,Makanan Berat,Gurih
+Pengkang,Kalimantan Barat,Beras Ketan,Makanan Ringan,Gurih
+Bubur Pedas,Kalimantan Barat,Beras,Makanan Berat,Pedas Gurih
+Kue Kantong Semar,Kalimantan Barat,Beras Ketan,Makanan Ringan,Manis
+Burung Punai Goreng,Kalimantan Barat,Burung Punai,Makanan Berat,Gurih
+Sotong Pangkong,Kalimantan Barat,Cumi-cumi,Makanan Ringan,Gurih
+Kwe Cap,Kalimantan Barat,Kulit Babi/Sapi,Makanan Berat,Gurih
+Lemang Kalbar,Kalimantan Barat,Beras Ketan,Makanan Ringan,Gurih
+Asam Pedas Pontianak,Kalimantan Barat,Ikan Patin,Makanan Berat,Asam Pedas
+Juhu Singkah,Kalimantan Tengah,Rebung,Makanan Berat,Gurih
+Kalumpe,Kalimantan Tengah,Daun Singkong,Makanan Berat,Gurih
+Wadi,Kalimantan Tengah,Ikan Fermentasi,Makanan Berat,Asam Gurih
+Hintalu Karuang,Kalimantan Tengah,Tepung Ketan,Makanan Ringan,Manis
+Soto Banjar,Kalimantan Selatan,Daging Ayam,Makanan Berat,Gurih
+Ketupat Kandangan,Kalimantan Selatan,Beras,Makanan Berat,Gurih
+Manday,Kalimantan Selatan,Kulit Cempedak,Makanan Pendamping,Gurih
+Ikan Bakar Patin,Kalimantan Selatan,Ikan Patin,Makanan Berat,Manis Gurih
+Bingka Barantai,Kalimantan Selatan,Telur dan Kentang,Makanan Ringan,Manis
+Amparan Tatak,Kalimantan Selatan,Tepung Beras,Makanan Ringan,Manis
+Nasi Kuning Samarinda,Kalimantan Timur,Beras,Makanan Berat,Gurih
+Gence Ruan,Kalimantan Timur,Ikan Haruan,Makanan Berat,Pedas Manis
+Ayam Cincane,Kalimantan Timur,Daging Ayam,Makanan Berat,Manis Gurih
+Sate Payau,Kalimantan Timur,Daging Rusa,Makanan Berat,Manis
+Kepiting Soka,Kalimantan Timur,Kepiting,Makanan Berat,Gurih
+Lawa,Kalimantan Utara,Timun dan Rumput Laut,Makanan Pendamping,Asam Segar
+Tudai,Kalimantan Utara,Kerang Dara,Makanan Berat,Gurih
+Nasi Subut,Kalimantan Utara,Beras dan Ubi,Makanan Berat,Gurih
+Sate Ikan Pari,Kalimantan Utara,Ikan Pari,Makanan Berat,Manis Gurih
+Tumis Kapah,Kalimantan Utara,Kerang Laut,Makanan Berat,Gurih
+Tinutuan,Sulawesi Utara,Beras dan Sayur,Makanan Berat,Gurih
+Ayam Rica-rica,Sulawesi Utara,Daging Ayam,Makanan Berat,Pedas
+Woku Belanga,Sulawesi Utara,Ikan Laut,Makanan Berat,Pedas Gurih
+Klappertaart,Sulawesi Utara,Kelapa Muda,Makanan Ringan,Manis
+Cakalang Fufu,Sulawesi Utara,Ikan Cakalang,Makanan Berat,Pedas
+Binte Biluhuta,Gorontalo,Jagung,Makanan Berat,Gurih
+Tili Aya,Gorontalo,Gula Merah,Makanan Ringan,Manis
+Sate Gorontalo,Gorontalo,Daging Sapi,Makanan Berat,Gurih
+Ayam Iloni,Gorontalo,Daging Ayam,Makanan Berat,Pedas Gurih
+Kue Sabongi,Gorontalo,Pisang,Makanan Ringan,Manis
+Kaledo,Sulawesi Tengah,Tulang Sapi,Makanan Berat,Gurih
+Uta Dada,Sulawesi Tengah,Daging Ayam,Makanan Berat,Pedas Gurih
+Palumara,Sulawesi Tengah,Ikan Bandeng,Makanan Berat,Asam Pedas
+Bau Peapi,Sulawesi Barat,Ikan Mandar,Makanan Berat,Asam Gurih
+Jepa,Sulawesi Barat,Singkong,Makanan Ringan,Tawar
+Golla Kambu,Sulawesi Barat,Beras Ketan,Makanan Ringan,Manis
+Sinonggi,Sulawesi Tenggara,Sagu,Makanan Berat,Tawar
+Sate Pokea,Sulawesi Tenggara,Kerang Air Tawar,Makanan Berat,Gurih
+Lapa-lapa,Sulawesi Tenggara,Beras,Makanan Berat,Gurih
+Kabuto,Sulawesi Tenggara,Singkong Fermentasi,Makanan Ringan,Manis
+Coto Makassar,Sulawesi Selatan,Daging Sapi,Makanan Berat,Gurih
+Sop Saudara,Sulawesi Selatan,Daging Sapi,Makanan Berat,Gurih
+Pallubasa,Sulawesi Selatan,Daging Sapi,Makanan Berat,Gurih
+Es Pisang Ijo,Sulawesi Selatan,Pisang,Minuman,Manis
+Jalangkote,Sulawesi Selatan,Tepung Terigu,Makanan Ringan,Gurih
+Pisang Epe,Sulawesi Selatan,Pisang,Makanan Ringan,Manis
+Kapurung,Sulawesi Selatan,Sagu,Makanan Berat,Gurih Asam
+Burasa,Sulawesi Selatan,Beras,Makanan Pendamping,Gurih
+Gohu Ikan,Maluku Utara,Ikan Tuna,Makanan Berat,Asam Pedas
+Ikan Kuah Kuning,Maluku,Ikan Tongkol,Makanan Berat,Asam Gurih
+Sagu Lempeng,Maluku,Sagu,Makanan Ringan,Tawar
+Papeda,Papua,Sagu,Makanan Berat,Tawar
+Kue Lontar,Papua,Susu dan Telur,Makanan Ringan,Manis
+Ikan Bakar Manokwari,Papua Barat,Ikan Laut,Makanan Berat,Pedas
+Aunu Senebre,Papua,Ikan Teri,Makanan Pendamping,Gurih
+Sate Ulat Sagu,Papua,Ulat Sagu,Makanan Ekstrem,Gurih
+Udang Selingkuh,Papua,Udang Air Tawar,Makanan Berat,Gurih Manis
+Keladi Tumbuk,Papua,Talas,Makanan Berat,Tawar
+Kue Bagea,Maluku,Sagu,Makanan Ringan,Manis
+Sambal Colo-colo,Maluku,Cabai dan Tomat,Makanan Pendamping,Pedas Asam

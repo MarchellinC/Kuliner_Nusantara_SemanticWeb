@@ -1,0 +1,1683 @@
+@prefix kuliner: <http://example.org/kuliner/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+kuliner:Mie_Aceh
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Aceh" ;
+    kuliner:berasalDari "Nanggroe Aceh Darussalam" ;
+    kuliner:bahanUtama "Mie Terigu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Sate_Matang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Matang" ;
+    kuliner:berasalDari "Nanggroe Aceh Darussalam" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ayam_Tangkap
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ayam Tangkap" ;
+    kuliner:berasalDari "Nanggroe Aceh Darussalam" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Timphan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Timphan" ;
+    kuliner:berasalDari "Nanggroe Aceh Darussalam" ;
+    kuliner:bahanUtama "Tepung Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Bika_Ambon
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bika Ambon" ;
+    kuliner:berasalDari "Sumatera Utara" ;
+    kuliner:bahanUtama "Tepung Tapioka" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Arsik
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Arsik" ;
+    kuliner:berasalDari "Sumatera Utara" ;
+    kuliner:bahanUtama "Ikan Mas" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Asam" .
+
+kuliner:Mie_Gomak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Gomak" ;
+    kuliner:berasalDari "Sumatera Utara" ;
+    kuliner:bahanUtama "Mie Lidi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Lontong_Medan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lontong Medan" ;
+    kuliner:berasalDari "Sumatera Utara" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Lemang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lemang" ;
+    kuliner:berasalDari "Sumatera Utara" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Anyang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Anyang" ;
+    kuliner:berasalDari "Sumatera Utara" ;
+    kuliner:bahanUtama "Sayuran" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Rendang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Rendang" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Sate_Padang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Padang" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Dendeng_Batokok
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Dendeng Batokok" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Ayam_Pop
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ayam Pop" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Soto_Padang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Soto Padang" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Gulai_Itik
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gulai Itik" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Daging Bebek" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Itik_Lado_Mudo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Itik Lado Mudo" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Daging Bebek" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Bika_Talago
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bika Talago" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Lamang_Tapai
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lamang Tapai" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Katupek_Pitalah
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Katupek Pitalah" ;
+    kuliner:berasalDari "Sumatera Barat" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Gulai_Belacan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gulai Belacan" ;
+    kuliner:berasalDari "Riau" ;
+    kuliner:bahanUtama "Udang" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Asam_Pedas_Baung
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Asam Pedas Baung" ;
+    kuliner:berasalDari "Riau" ;
+    kuliner:bahanUtama "Ikan Baung" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Mie_Lendir
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Lendir" ;
+    kuliner:berasalDari "Kepulauan Riau" ;
+    kuliner:bahanUtama "Mie Kuning" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Roti_Jala
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Roti Jala" ;
+    kuliner:berasalDari "Riau" ;
+    kuliner:bahanUtama "Tepung Terigu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sop_Tunjang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sop Tunjang" ;
+    kuliner:berasalDari "Riau" ;
+    kuliner:bahanUtama "Tulang Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Otak_otak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Otak-otak" ;
+    kuliner:berasalDari "Kepulauan Riau" ;
+    kuliner:bahanUtama "Ikan Tenggiri" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sate_Senapelan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Senapelan" ;
+    kuliner:berasalDari "Riau" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Pedas" .
+
+kuliner:Luti_Gendang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Luti Gendang" ;
+    kuliner:berasalDari "Kepulauan Riau" ;
+    kuliner:bahanUtama "Tepung Terigu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Mie_Tarempa
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Tarempa" ;
+    kuliner:berasalDari "Kepulauan Riau" ;
+    kuliner:bahanUtama "Mie Terigu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Gonggong_Rebus
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gonggong Rebus" ;
+    kuliner:berasalDari "Kepulauan Riau" ;
+    kuliner:bahanUtama "Siput Laut" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Tempoyak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tempoyak" ;
+    kuliner:berasalDari "Jambi" ;
+    kuliner:bahanUtama "Durian Fermentasi" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Asam Manis" .
+
+kuliner:Gulai_Tepek_Ikan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gulai Tepek Ikan" ;
+    kuliner:berasalDari "Jambi" ;
+    kuliner:bahanUtama "Ikan Gabus" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Nasi_Gemuk
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Gemuk" ;
+    kuliner:berasalDari "Jambi" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Daging_Masak_Hitam
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Daging Masak Hitam" ;
+    kuliner:berasalDari "Jambi" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Pempek
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pempek" ;
+    kuliner:berasalDari "Sumatera Selatan" ;
+    kuliner:bahanUtama "Ikan Tenggiri" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Tekwan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tekwan" ;
+    kuliner:berasalDari "Sumatera Selatan" ;
+    kuliner:bahanUtama "Ikan Tenggiri" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Model
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Model" ;
+    kuliner:berasalDari "Sumatera Selatan" ;
+    kuliner:bahanUtama "Ikan Tenggiri" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Laksan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Laksan" ;
+    kuliner:berasalDari "Sumatera Selatan" ;
+    kuliner:bahanUtama "Ikan Tenggiri" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Celimpungan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Celimpungan" ;
+    kuliner:berasalDari "Sumatera Selatan" ;
+    kuliner:bahanUtama "Ikan Tenggiri" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Burgo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Burgo" ;
+    kuliner:berasalDari "Sumatera Selatan" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Pendap
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pendap" ;
+    kuliner:berasalDari "Bengkulu" ;
+    kuliner:bahanUtama "Ikan" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Lema
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lema" ;
+    kuliner:berasalDari "Bengkulu" ;
+    kuliner:bahanUtama "Rebung Fermentasi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Bagar_Hiu
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bagar Hiu" ;
+    kuliner:berasalDari "Bengkulu" ;
+    kuliner:bahanUtama "Daging Hiu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Kue_Tat
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Tat" ;
+    kuliner:berasalDari "Bengkulu" ;
+    kuliner:bahanUtama "Tepung Terigu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Lempah_Kuning
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lempah Kuning" ;
+    kuliner:berasalDari "Bangka Belitung" ;
+    kuliner:bahanUtama "Ikan Pari" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Mie_Koba
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Koba" ;
+    kuliner:berasalDari "Bangka Belitung" ;
+    kuliner:bahanUtama "Mie Terigu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Pantiaw
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pantiaw" ;
+    kuliner:berasalDari "Bangka Belitung" ;
+    kuliner:bahanUtama "Tepung Sagu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Rusip
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Rusip" ;
+    kuliner:berasalDari "Bangka Belitung" ;
+    kuliner:bahanUtama "Ikan Fermentasi" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Asam" .
+
+kuliner:Lakso
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lakso" ;
+    kuliner:berasalDari "Bangka Belitung" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Martabak_Bangka
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Martabak Bangka" ;
+    kuliner:berasalDari "Bangka Belitung" ;
+    kuliner:bahanUtama "Tepung Terigu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Seruit
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Seruit" ;
+    kuliner:berasalDari "Lampung" ;
+    kuliner:bahanUtama "Ikan Sungai" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Asam" .
+
+kuliner:Gabing
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gabing" ;
+    kuliner:berasalDari "Lampung" ;
+    kuliner:bahanUtama "Batang Kelapa Muda" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Geguduh
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Geguduh" ;
+    kuliner:berasalDari "Lampung" ;
+    kuliner:bahanUtama "Pisang" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Sate_Bandeng
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Bandeng" ;
+    kuliner:berasalDari "Banten" ;
+    kuliner:bahanUtama "Ikan Bandeng" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Rabeg
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Rabeg" ;
+    kuliner:berasalDari "Banten" ;
+    kuliner:bahanUtama "Daging Kambing" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Pedas" .
+
+kuliner:Nasi_Sumsum
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Sumsum" ;
+    kuliner:berasalDari "Banten" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Kue_Jojorong
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Jojorong" ;
+    kuliner:berasalDari "Banten" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Ketan_Bintul
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ketan Bintul" ;
+    kuliner:berasalDari "Banten" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Pecak_Bandeng
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pecak Bandeng" ;
+    kuliner:berasalDari "Banten" ;
+    kuliner:bahanUtama "Ikan Bandeng" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Gerem_Asem
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gerem Asem" ;
+    kuliner:berasalDari "Banten" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Kerak_Telor
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kerak Telor" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Soto_Betawi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Soto Betawi" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Nasi_Uduk
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Uduk" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ketoprak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ketoprak" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Tahu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Asinan_Betawi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Asinan Betawi" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Sayuran" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Semur_Jengkol
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Semur Jengkol" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Jengkol" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Roti_Buaya
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Roti Buaya" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Tepung Terigu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Putu_Mayang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Putu Mayang" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Kue_Cucur
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Cucur" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Bir_Pletok
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bir Pletok" ;
+    kuliner:berasalDari "DKI Jakarta" ;
+    kuliner:bahanUtama "Rempah" ;
+    kuliner:kategori "Minuman" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Karedok
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Karedok" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Sayuran" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Seblak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Seblak" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Kerupuk Basah" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Batagor
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Batagor" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Tahu dan Ikan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Surabi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Surabi" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Nasi_Timbel
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Timbel" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Mie_Kocok
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Kocok" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Mie Kuning" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Tahu_Gejrot
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tahu Gejrot" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Tahu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis Pedas" .
+
+kuliner:Empal_Gentong
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Empal Gentong" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Nasi_Tutug_Oncom
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Tutug Oncom" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Beras dan Oncom" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Peuyeum
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Peuyeum" ;
+    kuliner:berasalDari "Jawa Barat" ;
+    kuliner:bahanUtama "Singkong Fermentasi" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Garang_Asem
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Garang Asem" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Tengkleng
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tengkleng" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Tulang Kambing" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sate_Buntel
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Buntel" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Daging Kambing" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Nasi_Liwet_Solo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Liwet Solo" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Lumpia_Semarang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lumpia Semarang" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Rebung" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Tahu_Petis
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tahu Petis" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Tahu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Nasi_Gandul
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Gandul" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sroto_Sokaraja
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sroto Sokaraja" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Mangut_Lele
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mangut Lele" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Ikan Lele" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Tempe_Mendoan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tempe Mendoan" ;
+    kuliner:berasalDari "Jawa Tengah" ;
+    kuliner:bahanUtama "Tempe" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Gudeg
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gudeg" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Nangka Muda" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Sate_Klatak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Klatak" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Daging Kambing" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Bakpia
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bakpia" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Tepung Terigu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Tiwul
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tiwul" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Singkong" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Gatot
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gatot" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Singkong Fermentasi" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Krecek
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Krecek" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Kerupuk Kulit Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Oseng_Mercon
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Oseng Mercon" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Geplak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Geplak" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Kelapa Parut" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Yangko
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Yangko" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Tepung Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Mie_Lethek
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Lethek" ;
+    kuliner:berasalDari "DI Yogyakarta" ;
+    kuliner:bahanUtama "Tepung Singkong" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Rawon
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Rawon" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Rujak_Cingur
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Rujak Cingur" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Cingur Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Lontong_Balap
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lontong Balap" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Soto_Lamongan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Soto Lamongan" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sate_Madura
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Madura" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Pecel_Madiun
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pecel Madiun" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Sayuran" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Tahu_Tek
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tahu Tek" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Tahu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Bakso_Malang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bakso Malang" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Nasi_Krawu
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Krawu" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Tahu_Campur
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tahu Campur" ;
+    kuliner:berasalDari "Jawa Timur" ;
+    kuliner:bahanUtama "Tahu dan Daging" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Ayam_Betutu
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ayam Betutu" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Sate_Lilit
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Lilit" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Ikan Tenggiri" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Lawar
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lawar" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Sayuran dan Daging" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Jukut_Undis
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Jukut Undis" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Kacang Hitam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Serombotan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Serombotan" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Sayuran" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Rujak_Kuah_Pindang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Rujak Kuah Pindang" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Buah-buahan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Pedas Asam" .
+
+kuliner:Nasi_Jinggo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Jinggo" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Tum_Ayam
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tum Ayam" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Komoh
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Komoh" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Daging Babi/Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Jaja_Laklak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Jaja Laklak" ;
+    kuliner:berasalDari "Bali" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Ayam_Taliwang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ayam Taliwang" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Sate_Rembiga
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Rembiga" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Pedas" .
+
+kuliner:Plecing_Kangkung
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Plecing Kangkung" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Sayuran" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Bebalung
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bebalung" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Tulang Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Nasi_Balap_Puyung
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Balap Puyung" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Sate_Bulayak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Bulayak" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ares
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ares" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Pelepah Pisang" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sate_Kere
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Kere" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Jeroan Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Taliwang_Bakar
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Taliwang Bakar" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Jajanan_Cerorot
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Jajanan Cerorot" ;
+    kuliner:berasalDari "Nusa Tenggara Barat" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Se'i_Sapi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Se'i Sapi" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Catemak_Jagung
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Catemak Jagung" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Jagung" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Jagung_Bose
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Jagung Bose" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Jagung" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Kolo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kolo" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Muku_Loto
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Muku Loto" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Pisang Mentah" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Rumpu_Rampe
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Rumpu Rampe" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Daun Pepaya" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Pedas Pahit" .
+
+kuliner:Jawada
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Jawada" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Kue_Rambut
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Rambut" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Sate_Gurita
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Gurita" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Gurita" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ikan_Kuah_Asam
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ikan Kuah Asam" ;
+    kuliner:berasalDari "Nusa Tenggara Timur" ;
+    kuliner:bahanUtama "Ikan Laut" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Gurih" .
+
+kuliner:Choi_Pan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Choi Pan" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Mie_Kepiting
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Mie Kepiting" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Mie Kuning" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Pengkang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pengkang" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Bubur_Pedas
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bubur Pedas" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Kue_Kantong_Semar
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Kantong Semar" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Burung_Punai_Goreng
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Burung Punai Goreng" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Burung Punai" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sotong_Pangkong
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sotong Pangkong" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Cumi-cumi" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Kwe_Cap
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kwe Cap" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Kulit Babi/Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Lemang_Kalbar
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lemang Kalbar" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Asam_Pedas_Pontianak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Asam Pedas Pontianak" ;
+    kuliner:berasalDari "Kalimantan Barat" ;
+    kuliner:bahanUtama "Ikan Patin" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Juhu_Singkah
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Juhu Singkah" ;
+    kuliner:berasalDari "Kalimantan Tengah" ;
+    kuliner:bahanUtama "Rebung" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Kalumpe
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kalumpe" ;
+    kuliner:berasalDari "Kalimantan Tengah" ;
+    kuliner:bahanUtama "Daun Singkong" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Wadi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Wadi" ;
+    kuliner:berasalDari "Kalimantan Tengah" ;
+    kuliner:bahanUtama "Ikan Fermentasi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Gurih" .
+
+kuliner:Hintalu_Karuang
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Hintalu Karuang" ;
+    kuliner:berasalDari "Kalimantan Tengah" ;
+    kuliner:bahanUtama "Tepung Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Soto_Banjar
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Soto Banjar" ;
+    kuliner:berasalDari "Kalimantan Selatan" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ketupat_Kandangan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ketupat Kandangan" ;
+    kuliner:berasalDari "Kalimantan Selatan" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Manday
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Manday" ;
+    kuliner:berasalDari "Kalimantan Selatan" ;
+    kuliner:bahanUtama "Kulit Cempedak" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ikan_Bakar_Patin
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ikan Bakar Patin" ;
+    kuliner:berasalDari "Kalimantan Selatan" ;
+    kuliner:bahanUtama "Ikan Patin" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Bingka_Barantai
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bingka Barantai" ;
+    kuliner:berasalDari "Kalimantan Selatan" ;
+    kuliner:bahanUtama "Telur dan Kentang" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Amparan_Tatak
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Amparan Tatak" ;
+    kuliner:berasalDari "Kalimantan Selatan" ;
+    kuliner:bahanUtama "Tepung Beras" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Nasi_Kuning_Samarinda
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Kuning Samarinda" ;
+    kuliner:berasalDari "Kalimantan Timur" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Gence_Ruan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gence Ruan" ;
+    kuliner:berasalDari "Kalimantan Timur" ;
+    kuliner:bahanUtama "Ikan Haruan" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Manis" .
+
+kuliner:Ayam_Cincane
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ayam Cincane" ;
+    kuliner:berasalDari "Kalimantan Timur" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Sate_Payau
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Payau" ;
+    kuliner:berasalDari "Kalimantan Timur" ;
+    kuliner:bahanUtama "Daging Rusa" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Kepiting_Soka
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kepiting Soka" ;
+    kuliner:berasalDari "Kalimantan Timur" ;
+    kuliner:bahanUtama "Kepiting" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Lawa
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lawa" ;
+    kuliner:berasalDari "Kalimantan Utara" ;
+    kuliner:bahanUtama "Timun dan Rumput Laut" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Asam Segar" .
+
+kuliner:Tudai
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tudai" ;
+    kuliner:berasalDari "Kalimantan Utara" ;
+    kuliner:bahanUtama "Kerang Dara" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Nasi_Subut
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Nasi Subut" ;
+    kuliner:berasalDari "Kalimantan Utara" ;
+    kuliner:bahanUtama "Beras dan Ubi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sate_Ikan_Pari
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Ikan Pari" ;
+    kuliner:berasalDari "Kalimantan Utara" ;
+    kuliner:bahanUtama "Ikan Pari" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Manis Gurih" .
+
+kuliner:Tumis_Kapah
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tumis Kapah" ;
+    kuliner:berasalDari "Kalimantan Utara" ;
+    kuliner:bahanUtama "Kerang Laut" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Tinutuan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tinutuan" ;
+    kuliner:berasalDari "Sulawesi Utara" ;
+    kuliner:bahanUtama "Beras dan Sayur" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ayam_Rica_rica
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ayam Rica-rica" ;
+    kuliner:berasalDari "Sulawesi Utara" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Woku_Belanga
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Woku Belanga" ;
+    kuliner:berasalDari "Sulawesi Utara" ;
+    kuliner:bahanUtama "Ikan Laut" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Klappertaart
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Klappertaart" ;
+    kuliner:berasalDari "Sulawesi Utara" ;
+    kuliner:bahanUtama "Kelapa Muda" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Cakalang_Fufu
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Cakalang Fufu" ;
+    kuliner:berasalDari "Sulawesi Utara" ;
+    kuliner:bahanUtama "Ikan Cakalang" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Binte_Biluhuta
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Binte Biluhuta" ;
+    kuliner:berasalDari "Gorontalo" ;
+    kuliner:bahanUtama "Jagung" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Tili_Aya
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Tili Aya" ;
+    kuliner:berasalDari "Gorontalo" ;
+    kuliner:bahanUtama "Gula Merah" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Sate_Gorontalo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Gorontalo" ;
+    kuliner:berasalDari "Gorontalo" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Ayam_Iloni
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ayam Iloni" ;
+    kuliner:berasalDari "Gorontalo" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Kue_Sabongi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Sabongi" ;
+    kuliner:berasalDari "Gorontalo" ;
+    kuliner:bahanUtama "Pisang" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Kaledo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kaledo" ;
+    kuliner:berasalDari "Sulawesi Tengah" ;
+    kuliner:bahanUtama "Tulang Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Uta_Dada
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Uta Dada" ;
+    kuliner:berasalDari "Sulawesi Tengah" ;
+    kuliner:bahanUtama "Daging Ayam" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas Gurih" .
+
+kuliner:Palumara
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Palumara" ;
+    kuliner:berasalDari "Sulawesi Tengah" ;
+    kuliner:bahanUtama "Ikan Bandeng" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Bau_Peapi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Bau Peapi" ;
+    kuliner:berasalDari "Sulawesi Barat" ;
+    kuliner:bahanUtama "Ikan Mandar" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Gurih" .
+
+kuliner:Jepa
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Jepa" ;
+    kuliner:berasalDari "Sulawesi Barat" ;
+    kuliner:bahanUtama "Singkong" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Tawar" .
+
+kuliner:Golla_Kambu
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Golla Kambu" ;
+    kuliner:berasalDari "Sulawesi Barat" ;
+    kuliner:bahanUtama "Beras Ketan" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Sinonggi
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sinonggi" ;
+    kuliner:berasalDari "Sulawesi Tenggara" ;
+    kuliner:bahanUtama "Sagu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Tawar" .
+
+kuliner:Sate_Pokea
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Pokea" ;
+    kuliner:berasalDari "Sulawesi Tenggara" ;
+    kuliner:bahanUtama "Kerang Air Tawar" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Lapa_lapa
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Lapa-lapa" ;
+    kuliner:berasalDari "Sulawesi Tenggara" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Kabuto
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kabuto" ;
+    kuliner:berasalDari "Sulawesi Tenggara" ;
+    kuliner:bahanUtama "Singkong Fermentasi" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Coto_Makassar
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Coto Makassar" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sop_Saudara
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sop Saudara" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Pallubasa
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pallubasa" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Daging Sapi" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Es_Pisang_Ijo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Es Pisang Ijo" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Pisang" ;
+    kuliner:kategori "Minuman" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Jalangkote
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Jalangkote" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Tepung Terigu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Pisang_Epe
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Pisang Epe" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Pisang" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Kapurung
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kapurung" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Sagu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih Asam" .
+
+kuliner:Burasa
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Burasa" ;
+    kuliner:berasalDari "Sulawesi Selatan" ;
+    kuliner:bahanUtama "Beras" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Gohu_Ikan
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Gohu Ikan" ;
+    kuliner:berasalDari "Maluku Utara" ;
+    kuliner:bahanUtama "Ikan Tuna" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Pedas" .
+
+kuliner:Ikan_Kuah_Kuning
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ikan Kuah Kuning" ;
+    kuliner:berasalDari "Maluku" ;
+    kuliner:bahanUtama "Ikan Tongkol" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Asam Gurih" .
+
+kuliner:Sagu_Lempeng
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sagu Lempeng" ;
+    kuliner:berasalDari "Maluku" ;
+    kuliner:bahanUtama "Sagu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Tawar" .
+
+kuliner:Papeda
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Papeda" ;
+    kuliner:berasalDari "Papua" ;
+    kuliner:bahanUtama "Sagu" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Tawar" .
+
+kuliner:Kue_Lontar
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Lontar" ;
+    kuliner:berasalDari "Papua" ;
+    kuliner:bahanUtama "Susu dan Telur" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Ikan_Bakar_Manokwari
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Ikan Bakar Manokwari" ;
+    kuliner:berasalDari "Papua Barat" ;
+    kuliner:bahanUtama "Ikan Laut" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Pedas" .
+
+kuliner:Aunu_Senebre
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Aunu Senebre" ;
+    kuliner:berasalDari "Papua" ;
+    kuliner:bahanUtama "Ikan Teri" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Sate_Ulat_Sagu
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sate Ulat Sagu" ;
+    kuliner:berasalDari "Papua" ;
+    kuliner:bahanUtama "Ulat Sagu" ;
+    kuliner:kategori "Makanan Ekstrem" ;
+    kuliner:rasa "Gurih" .
+
+kuliner:Udang_Selingkuh
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Udang Selingkuh" ;
+    kuliner:berasalDari "Papua" ;
+    kuliner:bahanUtama "Udang Air Tawar" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Gurih Manis" .
+
+kuliner:Keladi_Tumbuk
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Keladi Tumbuk" ;
+    kuliner:berasalDari "Papua" ;
+    kuliner:bahanUtama "Talas" ;
+    kuliner:kategori "Makanan Berat" ;
+    kuliner:rasa "Tawar" .
+
+kuliner:Kue_Bagea
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Kue Bagea" ;
+    kuliner:berasalDari "Maluku" ;
+    kuliner:bahanUtama "Sagu" ;
+    kuliner:kategori "Makanan Ringan" ;
+    kuliner:rasa "Manis" .
+
+kuliner:Sambal_Colo_colo
+    rdf:type kuliner:Makanan ;
+    kuliner:namaMakanan "Sambal Colo-colo" ;
+    kuliner:berasalDari "Maluku" ;
+    kuliner:bahanUtama "Cabai dan Tomat" ;
+    kuliner:kategori "Makanan Pendamping" ;
+    kuliner:rasa "Pedas Asam" .
+

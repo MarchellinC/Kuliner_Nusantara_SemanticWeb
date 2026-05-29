@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Ontology rdf:about="http://example.org/kuliner/KulinerOntology">
+  </owl:Ontology>
+
+  <owl:Class rdf:about="http://example.org/kuliner/Makanan">
+    <rdfs:label>Makanan</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.org/kuliner/Provinsi">
+    <rdfs:label>Provinsi</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.org/kuliner/BahanUtama">
+    <rdfs:label>Bahan Utama</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.org/kuliner/Kategori">
+    <rdfs:label>Kategori</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.org/kuliner/Rasa">
+    <rdfs:label>Rasa</rdfs:label>
+  </owl:Class>
+
+  <owl:DatatypeProperty rdf:about="http://example.org/kuliner/namaMakanan">
+    <rdfs:label>Nama Makanan</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/kuliner/Makanan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://example.org/kuliner/berasalDari">
+    <rdfs:label>Berasal Dari</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/kuliner/Makanan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://example.org/kuliner/bahanUtama">
+    <rdfs:label>Bahan Utama</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/kuliner/Makanan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://example.org/kuliner/kategori">
+    <rdfs:label>Kategori</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/kuliner/Makanan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://example.org/kuliner/rasa">
+    <rdfs:label>Rasa</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/kuliner/Makanan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+</rdf:RDF>

@@ -1,0 +1,59 @@
+@prefix kuliner: <http://example.org/kuliner/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+kuliner:KulinerOntology rdf:type owl:Ontology .
+
+# ==========================
+# Classes
+# ==========================
+
+
+    kuliner:Makanan rdf:type owl:Class ;
+        rdfs:label "Makanan" .
+
+    kuliner:Provinsi rdf:type owl:Class ;
+        rdfs:label "Provinsi" .
+
+    kuliner:BahanUtama rdf:type owl:Class ;
+        rdfs:label "Bahan Utama" .
+
+    kuliner:Kategori rdf:type owl:Class ;
+        rdfs:label "Kategori" .
+
+    kuliner:Rasa rdf:type owl:Class ;
+        rdfs:label "Rasa" .
+
+    
+# ==========================
+# Datatype Properties
+# ==========================
+
+
+    kuliner:namaMakanan rdf:type owl:DatatypeProperty ;
+        rdfs:label "Nama Makanan" ;
+        rdfs:domain kuliner:Makanan ;
+        rdfs:range rdfs:Literal .
+
+    kuliner:berasalDari rdf:type owl:DatatypeProperty ;
+        rdfs:label "Berasal Dari" ;
+        rdfs:domain kuliner:Makanan ;
+        rdfs:range rdfs:Literal .
+
+    kuliner:bahanUtama rdf:type owl:DatatypeProperty ;
+        rdfs:label "Bahan Utama" ;
+        rdfs:domain kuliner:Makanan ;
+        rdfs:range rdfs:Literal .
+
+    kuliner:kategori rdf:type owl:DatatypeProperty ;
+        rdfs:label "Kategori" ;
+        rdfs:domain kuliner:Makanan ;
+        rdfs:range rdfs:Literal .
+
+    kuliner:rasa rdf:type owl:DatatypeProperty ;
+        rdfs:label "Rasa" ;
+        rdfs:domain kuliner:Makanan ;
+        rdfs:range rdfs:Literal .
+
+    

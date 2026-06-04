@@ -32,7 +32,7 @@ def render_food_cards(df, page_size=10):
     
     page_items = df.iloc[start_idx:end_idx]
 
-    # Render each food card item entirely within one HTML structure to prevent layout breaks
+    # Render each food card item using st.container(border=True)
     for i, (_, row) in enumerate(page_items.iterrows(), start=start_idx + 1):
         uri = row["makanan"]
         name = row.get("nama") or uri.split("/")[-1].replace("_", " ")
@@ -40,27 +40,33 @@ def render_food_cards(df, page_size=10):
         cat = row.get("kategori", "N/A")
         rasa = row.get("rasa", "N/A")
         
-        st.markdown(f"""
-        <div class="search-item-card">
-            <div class="card-left">
-                <span class="index-num-box">{i}</span>
-            </div>
-            <div class="card-right">
-                <a class="food-title-link" href="?select_food={uri}" target="_self">{name}</a>
-                <div class="food-meta-row">
+        with st.container(border=True):
+            cols = st.columns([1, 11])
+            with cols[0]:
+                st.markdown(f"""
+                <div class="index-num-box">{i}</div>
+                """, unsafe_allow_html=True)
+                
+            with cols[1]:
+                # Standard button styled as plain text hyperlink title
+                btn_key = f"food_btn_select_{uri}"
+                if st.button(name, key=btn_key):
+                    st.session_state.selected_food_details = row.to_dict()
+                    st.rerun()
+                    
+                st.markdown(f"""
+                <div class="food-meta-row" style="margin-top: 6px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
                     <div style="display: flex; gap: 8px;">
                         <span class="tag-badge cat-tag">{cat}</span>
                         <span class="tag-badge taste-tag">{rasa}</span>
                     </div>
                     <div class="loc-text">
-                        📌 {prov}
+                        📍 <span style="font-weight: 500;">{prov}</span>
                     </div>
                 </div>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+                """, unsafe_allow_html=True)
 
-    # Render Pagination controls using columns
+    # Render Pagination controls
     st.markdown("<div style='height: 10px;'></div>", unsafe_allow_html=True)
     p_cols = st.columns([1, 3, 1])
     

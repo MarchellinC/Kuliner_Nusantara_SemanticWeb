@@ -5,31 +5,41 @@ html, body, [class*="css"] {
 }
 
 /* Set moving background gradient on the root app wrapper */
-.stApp, [data-testid="stAppViewContainer"] {
+.stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+    background: transparent !important;
+}
+
+.stApp::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+
     background: linear-gradient(
-        135deg,
-        #F9B2D7 0%,
-        #CFECF3 35%,
-        #DAF9DE 70%,
-        #F6FFDC 100%
-    ) !important;
-    background-size: 400% 400% !important;
-    animation: gradientMove 15s ease infinite !important;
+        -45deg,
+        #F9B2D7,
+        #CFECF3,
+        #DAF9DE,
+        #F6FFDC
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 18s ease infinite;
 }
 
-[data-testid="stHeader"] {
-    background: transparent !important;
-}
+.stApp::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -9;
 
-[data-testid="stMainViewContainer"] {
-    background: transparent !important;
-}
+    background:
+        radial-gradient(circle at 20% 20%, rgba(249,178,215,.35), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(207,236,243,.35), transparent 40%),
+        radial-gradient(circle at 70% 80%, rgba(218,249,222,.35), transparent 40%),
+        radial-gradient(circle at 30% 75%, rgba(246,255,220,.35), transparent 40%);
 
-[data-testid="stSidebar"] {
-    background-color: rgba(255, 255, 255, 0.45) !important;
-    backdrop-filter: blur(20px) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.5) !important;
-    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.03) !important;
+    animation: floatGlow 20s ease-in-out infinite;
 }
 
 @keyframes gradientMove {
@@ -38,10 +48,36 @@ html, body, [class*="css"] {
     100% { background-position: 0% 50%; }
 }
 
+@keyframes floatGlow {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(-20px, 20px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+/* Fix margin top / padding top on sidebar and main page */
+[data-testid="stSidebarUserContent"] {
+    padding-top: 1.5rem !important;
+}
+
+[data-testid="stMainViewContainer"] {
+    padding-top: 2rem !important;
+}
+
+.main-content-wrapper {
+    margin-top: -30px !important;
+}
+
+/* Always display sidebar toggle arrow buttons */
+[data-testid="collapsedSidebarCodegen"] button,
+[data-testid="stSidebar"] button {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
 /* Hero Styles */
 .hero-container {
-    padding: 20px 0;
-    margin-bottom: 1.5rem;
+    padding: 10px 0;
+    margin-bottom: 1rem;
 }
 
 .hero-sub {
@@ -92,26 +128,27 @@ div.stButton > button {
     transition: all 0.2s ease !important;
 }
 
-/* Search results item card style - Single consolidated container card */
-.search-item-card {
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    padding: 16px 20px;
-    margin-bottom: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-    display: flex;
-    align-items: center;
-    gap: 18px;
+/* Streamlit Container Border Box - Styled as a Solid White Premium Card */
+/* Only target stVerticalBlockBorderWrapper to avoid styling inner layout columns */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: 20px !important;
+    padding: 18px 22px !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    overflow: hidden !important;
 }
 
-.card-left {
-    flex-shrink: 0;
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05) !important;
 }
 
 .index-num-box {
-    background-color: #f1f5f9;
+    background-color: #f8fafc;
     color: #64748b;
     font-weight: 700;
     border-radius: 10px;
@@ -121,38 +158,50 @@ div.stButton > button {
     align-items: center;
     justify-content: center;
     font-size: 0.95rem;
-}
-
-.card-right {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-/* Custom styled transparent text button for list cards */
-.food-title-link {
-    color: #1e3a8a !important;
-    font-size: 1.15rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: color 0.2s ease;
-    display: inline-block;
-    width: fit-content;
-}
-
-.food-title-link:hover {
-    color: #ec4899 !important;
-    text-decoration: underline;
-}
-
-.food-meta-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 2px;
-    flex-wrap: wrap;
-    gap: 10px;
+    border: 1px solid #f1f5f9;
+}
+
+/* Strips borders and backgrounds from the button inside card containers */
+[data-testid="stVerticalBlockBorderWrapper"] div.stButton > button {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #1e3a8a !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+    line-height: 1.2 !important;
+    min-height: unset !important;
+    width: auto !important;
+    display: inline-block !important;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] div.stButton > button:hover {
+    color: #ec4899 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] div.stButton > button:focus {
+    color: #ec4899 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.loc-text {
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 .tag-badge {
@@ -171,12 +220,6 @@ div.stButton > button {
 .taste-tag {
     background-color: #dcfce7;
     color: #15803d;
-}
-
-.loc-text {
-    color: #475569;
-    font-size: 0.85rem;
-    font-weight: 500;
 }
 
 .count-badge {

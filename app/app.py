@@ -57,17 +57,8 @@ if not bahan_df.empty and "bahanUtama" in bahan_df.columns:
 if "search_results" not in st.session_state:
     st.session_state.search_results = run_query(search_foods())
 
-# Synchronize selected food from URL query parameters
-query_params = st.query_params
-if "select_food" in query_params:
-    selected_uri = query_params["select_food"]
-    if "search_results" in st.session_state and not st.session_state.search_results.empty:
-        matched = st.session_state.search_results[st.session_state.search_results["makanan"] == selected_uri]
-        if not matched.empty:
-            st.session_state.selected_food_details = matched.iloc[0].to_dict()
-else:
-    if "selected_food_details" not in st.session_state:
-        st.session_state.selected_food_details = None
+if "selected_food_details" not in st.session_state:
+    st.session_state.selected_food_details = None
 
 # Render Sidebar (Tentang Proyek and Mode Gelap only)
 render_sidebar()
@@ -95,8 +86,6 @@ if search_clicked:
     )
     st.session_state.current_page = 1
     st.session_state.selected_food_details = None
-    # Clear query parameter to keep states clean
-    st.query_params.clear()
     st.rerun()
 
 # Handle Reset interaction
@@ -104,7 +93,6 @@ if reset_clicked:
     st.session_state.search_results = run_query(search_foods())
     st.session_state.current_page = 1
     st.session_state.selected_food_details = None
-    st.query_params.clear()
     st.rerun()
 
 st.markdown("<br>", unsafe_allow_html=True)

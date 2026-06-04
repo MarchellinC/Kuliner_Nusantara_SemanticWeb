@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Set moving background gradient on the root app wrapper */
+.stApp, [data-testid="stAppViewContainer"] {
+    background: linear-gradient(
+        135deg,
+        #F9B2D7 0%,
+        #CFECF3 35%,
+        #DAF9DE 70%,
+        #F6FFDC 100%
+    ) !important;
+    background-size: 400% 400% !important;
+    animation: gradientMove 15s ease infinite !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+[data-testid="stMainViewContainer"] {
+    background: transparent !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(20px) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.03) !important;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hero Styles */
+.hero-container {
+    padding: 20px 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    color: #475569;
+    margin: 0;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 5px 0 10px 0;
+    color: #1e293b;
+    letter-spacing: -1px;
+}
+
+.hero-title .highlight {
+    background: linear-gradient(135deg, #ec4899 0%, #14b8a6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Info Banner */
+.info-banner {
+    background-color: #f0fdf4;
+    border: 1px solid #dcfce7;
+    color: #166534;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Buttons style modification */
+div.stButton > button {
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    padding: 10px 24px !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Search results item card style - Single consolidated container card */
+.search-item-card {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.card-left {
+    flex-shrink: 0;
+}
+
+.index-num-box {
+    background-color: #f1f5f9;
+    color: #64748b;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.card-right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Custom styled transparent text button for list cards */
+.food-title-link {
+    color: #1e3a8a !important;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-block;
+    width: fit-content;
+}
+
+.food-title-link:hover {
+    color: #ec4899 !important;
+    text-decoration: underline;
+}
+
+.food-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-badge {
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.cat-tag {
+    background-color: #fce7f3;
+    color: #db2777;
+}
+
+.taste-tag {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.loc-text {
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.count-badge {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Pagination Info */
+.pagination-info {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #475569;
+    line-height: 2.2rem;
+}

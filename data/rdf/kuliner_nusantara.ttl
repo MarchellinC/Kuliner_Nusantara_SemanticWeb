@@ -1041,7 +1041,7 @@ kuliner:Jajanan_Cerorot
     kuliner:kategori "Makanan Ringan" ;
     kuliner:rasa "Manis" .
 
-kuliner:Se'i_Sapi
+kuliner:Sei_Sapi
     rdf:type kuliner:Makanan ;
     kuliner:namaMakanan "Se'i Sapi" ;
     kuliner:berasalDari "Nusa Tenggara Timur" ;

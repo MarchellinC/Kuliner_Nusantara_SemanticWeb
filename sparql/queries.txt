@@ -1,0 +1,82 @@
+# Kumpulan Query SPARQL untuk Sistem Pencarian Kuliner Nusantara
+
+Prefix yang digunakan:
+PREFIX kuliner: <http://example.org/kuliner/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+==================================================
+1. Tampilkan Semua Data Makanan
+==================================================
+SELECT ?nama ?provinsi ?kategori ?bahan ?rasa
+WHERE {
+  ?makanan rdf:type kuliner:Makanan .
+  ?makanan kuliner:namaMakanan ?nama .
+  ?makanan kuliner:berasalDari ?provinsi .
+  ?makanan kuliner:kategori ?kategori .
+  ?makanan kuliner:bahanUtama ?bahan .
+  ?makanan kuliner:rasa ?rasa .
+}
+
+==================================================
+2. Pencarian Makanan Berdasarkan Provinsi (Contoh: "Jawa Barat")
+==================================================
+SELECT ?nama ?kategori ?bahan ?rasa
+WHERE {
+  ?makanan rdf:type kuliner:Makanan .
+  ?makanan kuliner:namaMakanan ?nama .
+  ?makanan kuliner:berasalDari "Jawa Barat" .
+  ?makanan kuliner:kategori ?kategori .
+  ?makanan kuliner:bahanUtama ?bahan .
+  ?makanan kuliner:rasa ?rasa .
+}
+
+==================================================
+3. Pencarian Makanan Berdasarkan Kategori (Contoh: "Makanan Berat")
+==================================================
+SELECT ?nama ?provinsi ?bahan ?rasa
+WHERE {
+  ?makanan rdf:type kuliner:Makanan .
+  ?makanan kuliner:namaMakanan ?nama .
+  ?makanan kuliner:berasalDari ?provinsi .
+  ?makanan kuliner:kategori "Makanan Berat" .
+  ?makanan kuliner:bahanUtama ?bahan .
+  ?makanan kuliner:rasa ?rasa .
+}
+
+==================================================
+4. Pencarian Makanan Berdasarkan Bahan Utama (Teks yang mengandung kata "Daging Sapi")
+==================================================
+SELECT ?nama ?provinsi ?kategori ?bahan ?rasa
+WHERE {
+  ?makanan rdf:type kuliner:Makanan .
+  ?makanan kuliner:namaMakanan ?nama .
+  ?makanan kuliner:berasalDari ?provinsi .
+  ?makanan kuliner:kategori ?kategori .
+  ?makanan kuliner:bahanUtama ?bahan .
+  ?makanan kuliner:rasa ?rasa .
+  
+  FILTER(CONTAINS(LCASE(?bahan), LCASE("Daging Sapi")))
+}
+
+==================================================
+5. Filter Gabungan: Provinsi "DKI Jakarta" & Rasa "Gurih"
+==================================================
+SELECT ?nama ?kategori ?bahan
+WHERE {
+  ?makanan rdf:type kuliner:Makanan .
+  ?makanan kuliner:namaMakanan ?nama .
+  ?makanan kuliner:berasalDari "DKI Jakarta" .
+  ?makanan kuliner:kategori ?kategori .
+  ?makanan kuliner:bahanUtama ?bahan .
+  ?makanan kuliner:rasa "Gurih" .
+}
+
+==================================================
+6. Mengambil Daftar Provinsi (Unik/Distinct) untuk Opsi Filter
+==================================================
+SELECT DISTINCT ?provinsi
+WHERE {
+  ?makanan rdf:type kuliner:Makanan .
+  ?makanan kuliner:berasalDari ?provinsi .
+}
+ORDER BY ?provinsi

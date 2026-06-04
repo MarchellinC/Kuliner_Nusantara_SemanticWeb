@@ -1,0 +1,7 @@
+PREFIX kuliner: <http://example.org/kuliner/>
+
+SELECT DISTINCT ?provinsi
+WHERE {
+    ?makanan kuliner:berasalDari ?provinsi .
+}
+ORDER BY ?provinsi

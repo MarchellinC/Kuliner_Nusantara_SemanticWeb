@@ -1,4 +1,13 @@
 import streamlit as st
+import base64
+import os
+
+def get_image_base64(path):
+    if os.path.exists(path):
+        with open(path, "rb") as img_file:
+            encoded = base64.b64encode(img_file.read()).decode()
+            return f"data:image/png;base64,{encoded}"
+    return None
 
 RASA_COLOR = {
     "Pedas":        ("#fee2e2", "#dc2626"),
@@ -21,11 +30,11 @@ RASA_COLOR = {
 }
 
 KATEGORI_ICON = {
-    "Makanan Berat":      "🍽️",
-    "Makanan Ringan":     "🥟",
-    "Makanan Pendamping": "🥗",
-    "Makanan Ekstrem":    "🦟",
-    "Minuman":            "🥤",
+    "Makanan Berat":      "app/assets/makanan_berat.png",
+    "Makanan Ringan":     "app/assets/makanan_ringan.png",
+    "Makanan Pendamping": "app/assets/makanan_pendamping.png",
+    "Makanan Ekstrem":    "app/assets/makanan_ekstrem.png",
+    "Minuman":            "app/assets/minuman.png",
 }
 
 # CSS untuk detail panel — inject sekali
@@ -98,7 +107,14 @@ def render_detail_panel(selected_food):
     bahan = selected_food.get("bahanUtama") or selected_food.get("bahan_utama", "N/A")
 
     rasa_bg, rasa_txt = RASA_COLOR.get(rasa, ("#f1f5f9", "#64748b"))
-    kat_icon          = KATEGORI_ICON.get(cat, "🍴")
+    kat_path = KATEGORI_ICON.get(cat, "")
+    
+    # Cek apakah file PNG ada, jika ya gunakan image tag HTML, jika tidak gunakan emoji
+    kat_b64 = get_image_base64(kat_path) if kat_path else None
+    if kat_b64:
+        icon_html = f"<img src='{kat_b64}' style='width: 2.2rem; height: 2.2rem; object-fit: contain;' />"
+    else:
+        icon_html = "🍴" # Fallback emoji generik
 
     # ── Render satu blok HTML — tidak ada widget native di dalamnya ──
     st.markdown(
@@ -106,7 +122,7 @@ def render_detail_panel(selected_food):
 
         # Header
         + "<div class='dp-header' style='background:linear-gradient(135deg,#fff7ed,#fdf2f8 55%,#f0fdf4);'>"
-        + "<div class='dp-icon'>" + kat_icon + "</div>"
+        + "<div class='dp-icon'>" + icon_html + "</div>"
         + "<p class='dp-name'>" + name + "</p>"
         + "<span class='dp-badge' style='background:" + rasa_bg + ";color:" + rasa_txt + ";'>" + rasa + "</span>"
         + "</div>"

@@ -50,12 +50,4 @@ def render_filters(provinces, categories, rasas, bahan_utamas):
     with bc2:
         reset_clicked = st.button("Reset", use_container_width=True)
         
-    with bc3:
-        st.markdown("""
-        <div class="info-banner">
-            <span style="font-size: 1.1rem; margin-right: 5px;">💡</span>
-            Gunakan filter di atas untuk menemukan makanan khas sesuai preferensi Anda.
-        </div>
-        """, unsafe_allow_html=True)
-        
     return selected_province, selected_category, selected_rasa, selected_bahan, search_clicked, reset_clicked

@@ -98,7 +98,7 @@ Dataset CSV
 ### 1. Clone Repository
 
 ```bash
-git clone <url-repository>
+git clone https://github.com/MarchellinC/Kuliner_Nusantara_SemanticWeb.git
 cd Kuliner_Nusantara_SemanticWeb
 ```
 

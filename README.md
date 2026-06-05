@@ -91,3 +91,74 @@ Dataset CSV
 * Apache Jena Fuseki
 * SPARQL
 * Streamlit
+
+
+## Instalasi dan Menjalankan Aplikasi
+
+### 1. Clone Repository
+
+```bash
+git clone <url-repository>
+cd Kuliner_Nusantara_SemanticWeb
+```
+
+### 2. Buat dan Aktifkan Virtual Environment (Opsional)
+
+Buat virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Aktifkan virtual environment pada Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Isi file `requirements.txt`:
+
+```txt
+streamlit
+pandas
+SPARQLWrapper
+plotly
+```
+
+### 4. Jalankan Apache Jena Fuseki
+
+Pastikan Apache Jena Fuseki telah berjalan dan dataset RDF kuliner telah dimuat ke dalam server Fuseki.
+
+Contoh endpoint SPARQL yang digunakan:
+
+```text
+http://localhost:3030/kuliner/query
+```
+
+### 5. Menjalankan Aplikasi Streamlit
+
+Dari direktori utama proyek jalankan:
+
+```bash
+python -m streamlit run app/app.py
+```
+
+atau
+
+```bash
+streamlit run app/app.py
+```
+
+### 6. Akses Aplikasi
+
+Buka browser dan akses:
+
+```text
+http://localhost:8501
+```

@@ -1,0 +1,296 @@
+/* ===== GLOBAL RESET & BASE ===== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+
+html,
+body,
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"]{
+    background: transparent !important;
+}
+
+.stApp::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    background: linear-gradient(
+        -45deg,
+        #F9B2D7,
+        #CFECF3,
+        #DAF9DE,
+        #F6FFDC
+    );
+    background-size:400% 400%;
+    animation: gradientMove 18s ease infinite;
+}
+
+/* glow layer biar lebih hidup */
+.stApp::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(249,178,215,.25), transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(207,236,243,.25), transparent 40%),
+        radial-gradient(circle at 70% 80%, rgba(218,249,222,.25), transparent 40%),
+        radial-gradient(circle at 25% 75%, rgba(246,255,220,.25), transparent 40%);
+    animation: floatGlow 20s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0%   { background-position: 0% 50%; }
+    25%  { background-position: 100% 50%; }
+    50%  { background-position: 100% 100%; }
+    75%  { background-position: 0% 100%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes floatGlow {
+    0%   { transform: translate(0,0); }
+    50%  { transform: translate(-25px,20px); }
+    100% { transform: translate(0,0); }
+}
+
+/* ===== MAIN WRAPPER ===== */
+.main-content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ===== STREAMLIT OVERRIDES ===== */
+.block-container {
+    padding: 2rem 2.5rem !important;
+    max-width: 100% !important;
+}
+
+/* Remove default streamlit borders */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ========================================= */
+/* ===== NEW FOOD CARDS (GAMBAR KEDUA) ===== */
+/* ========================================= */
+
+.custom-food-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px !important;
+    background: linear-gradient(to bottom, #f4fbf7, #edf7f2); /* Gradien hijau tipis segar */
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-food-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.card-top-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.card-number-badge {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.inline-button-wrapper {
+    flex-grow: 1;
+}
+
+.inline-button-wrapper > div[data-testid="stButton"] > button {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 10px !important;
+    padding: 6px 16px !important;
+    margin: 0 !important;
+    min-height: unset !important;
+    height: 34px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    text-align: left !important;
+    width: auto !important; 
+    display: flex !important;
+    align-items: center !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.inline-button-wrapper > div[data-testid="stButton"] > button:hover {
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+    background: #f8fafc !important;
+}
+
+.inline-button-wrapper > div[data-testid="stButton"] > button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.card-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-left: 2px;
+}
+
+.fc-badge-new {
+    display: inline-block; 
+    padding: 4px 12px; 
+    border-radius: 20px;
+    font-size: 0.72rem; 
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.card-location {
+    color: #64748b;
+    font-size: 0.78rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+/* ===== OLD BADGES (Untuk elemen di luar card kalau masih dipakai) ===== */
+.tag-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cat-tag {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.taste-tag {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.count-badge {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1c1917;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 8px rgba(251,191,36,0.3);
+}
+
+/* ===== PAGINATION ===== */
+.pagination-info {
+    text-align: center;
+    color: #78716c;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+/* ===== LOCATION TEXT===== */
+.loc-text {
+    color: #a8a29e;
+    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* ===== SECTION HEADERS ===== */
+.section-header {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.4rem;
+    color: #1c1917;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.5px;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d6d3d1; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
+
+/* ===== SIDEBAR ===== */
+[data-testid="stSidebar"]{
+    background: rgba(255,255,255,.35) !important;
+    backdrop-filter: blur(22px) !important;
+    -webkit-backdrop-filter: blur(22px) !important;
+    border-right: 1px solid rgba(255,255,255,.45) !important;
+    box-shadow:
+        4px 0 24px rgba(0,0,0,.04) !important;
+}
+
+/* ===== FILTER AREA ===== */
+[data-testid="stSelectbox"] > div > div {
+    background: #ffffff !important;
+    border-color: #e7e5e4 !important;
+    border-radius: 10px !important;
+}
+
+/* ===== PRIMARY BUTTONS ===== */
+div.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #f59e0b, #ef4444) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: white !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(245,158,11,0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+div.stButton > button[kind="primary"]:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(245,158,11,0.4) !important;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

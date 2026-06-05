@@ -1,241 +1,241 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* ===== GLOBAL RESET & BASE ===== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap');
 
 html, body, [class*="css"] {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
 
-/* Set moving background gradient on the root app wrapper */
-.stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
-    background: transparent !important;
+/* ===== PAGE BACKGROUND ===== */
+.stApp {
+    background: #f5f0eb !important;
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(251, 191, 36, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.06) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c8b89a' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
 }
 
-.stApp::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -10;
-
-    background: linear-gradient(
-        -45deg,
-        #F9B2D7,
-        #CFECF3,
-        #DAF9DE,
-        #F6FFDC
-    );
-
-    background-size: 400% 400%;
-    animation: gradientMove 18s ease infinite;
-}
-
-.stApp::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -9;
-
-    background:
-        radial-gradient(circle at 20% 20%, rgba(249,178,215,.35), transparent 40%),
-        radial-gradient(circle at 80% 30%, rgba(207,236,243,.35), transparent 40%),
-        radial-gradient(circle at 70% 80%, rgba(218,249,222,.35), transparent 40%),
-        radial-gradient(circle at 30% 75%, rgba(246,255,220,.35), transparent 40%);
-
-    animation: floatGlow 20s ease-in-out infinite;
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes floatGlow {
-    0% { transform: translate(0px, 0px); }
-    50% { transform: translate(-20px, 20px); }
-    100% { transform: translate(0px, 0px); }
-}
-
-/* Fix margin top / padding top on sidebar and main page */
-[data-testid="stSidebarUserContent"] {
-    padding-top: 1.5rem !important;
-}
-
-[data-testid="stMainViewContainer"] {
-    padding-top: 2rem !important;
-}
-
+/* ===== MAIN WRAPPER ===== */
 .main-content-wrapper {
-    margin-top: -30px !important;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* Always display sidebar toggle arrow buttons */
-[data-testid="collapsedSidebarCodegen"] button,
-[data-testid="stSidebar"] button {
-    opacity: 1 !important;
-    visibility: visible !important;
+/* ===== STREAMLIT OVERRIDES ===== */
+.block-container {
+    padding: 2rem 2.5rem !important;
+    max-width: 100% !important;
 }
 
-/* Hero Styles */
-.hero-container {
-    padding: 10px 0;
-    margin-bottom: 1rem;
-}
-
-.hero-sub {
-    font-size: 1.2rem;
-    color: #475569;
-    margin: 0;
-    font-weight: 500;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin: 5px 0 10px 0;
-    color: #1e293b;
-    letter-spacing: -1px;
-}
-
-.hero-title .highlight {
-    background: linear-gradient(135deg, #ec4899 0%, #14b8a6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-desc {
-    font-size: 1.1rem;
-    color: #64748b;
-    margin: 0;
-}
-
-/* Info Banner */
-.info-banner {
-    background-color: #f0fdf4;
-    border: 1px solid #dcfce7;
-    color: #166534;
-    padding: 12px 18px;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    display: flex;
-    align-items: center;
-}
-
-/* Buttons style modification */
-div.stButton > button {
-    border-radius: 12px !important;
-    font-weight: 600 !important;
-    padding: 10px 24px !important;
-    transition: all 0.2s ease !important;
-}
-
-/* Streamlit Container Border Box - Styled as a Solid White Premium Card */
-/* Only target stVerticalBlockBorderWrapper to avoid styling inner layout columns */
+/* Remove default streamlit borders */
 [data-testid="stVerticalBlockBorderWrapper"] {
-    background-color: #ffffff !important;
-    background: #ffffff !important;
-    border: 1px solid rgba(0, 0, 0, 0.05) !important;
-    border-radius: 20px !important;
-    padding: 18px 22px !important;
-    margin-bottom: 16px !important;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03) !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-    overflow: hidden !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
 }
 
 [data-testid="stVerticalBlockBorderWrapper"]:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05) !important;
+    transform: none !important;
+    box-shadow: none !important;
 }
 
-.index-num-box {
-    background-color: #f8fafc;
-    color: #64748b;
-    font-weight: 700;
-    border-radius: 10px;
-    width: 38px;
-    height: 38px;
+
+/* ========================================= */
+/* ===== NEW FOOD CARDS (GAMBAR KEDUA) ===== */
+/* ========================================= */
+
+.custom-food-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px !important;
+    background: linear-gradient(to bottom, #f4fbf7, #edf7f2); /* Gradien hijau tipis segar */
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-food-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.card-top-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.card-number-badge {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    min-width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.95rem;
-    margin-top: 2px;
-    border: 1px solid #f1f5f9;
-}
-
-/* Strips borders and backgrounds from the button inside card containers */
-[data-testid="stVerticalBlockBorderWrapper"] div.stButton > button {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    color: #1e3a8a !important;
-    font-size: 1.25rem !important;
-    font-weight: 700 !important;
-    text-align: left !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    text-decoration: none !important;
-    line-height: 1.2 !important;
-    min-height: unset !important;
-    width: auto !important;
-    display: inline-block !important;
-}
-
-[data-testid="stVerticalBlockBorderWrapper"] div.stButton > button:hover {
-    color: #ec4899 !important;
-    background: transparent !important;
-    background-color: transparent !important;
-    text-decoration: none !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-[data-testid="stVerticalBlockBorderWrapper"] div.stButton > button:focus {
-    color: #ec4899 !important;
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-.loc-text {
     color: #475569;
+    font-weight: 700;
     font-size: 0.85rem;
-    font-weight: 500;
+    flex-shrink: 0;
 }
 
-.tag-badge {
-    padding: 4px 10px;
-    border-radius: 8px;
-    font-size: 0.75rem;
+.inline-button-wrapper {
+    flex-grow: 1;
+}
+
+.inline-button-wrapper > div[data-testid="stButton"] > button {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 10px !important;
+    padding: 6px 16px !important;
+    margin: 0 !important;
+    min-height: unset !important;
+    height: 34px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    text-align: left !important;
+    width: auto !important; 
+    display: flex !important;
+    align-items: center !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.inline-button-wrapper > div[data-testid="stButton"] > button:hover {
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+    background: #f8fafc !important;
+}
+
+.inline-button-wrapper > div[data-testid="stButton"] > button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.card-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-left: 2px;
+}
+
+.fc-badge-new {
+    display: inline-block; 
+    padding: 4px 12px; 
+    border-radius: 20px;
+    font-size: 0.72rem; 
     font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.card-location {
+    color: #64748b;
+    font-size: 0.78rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+/* ===== OLD BADGES (Untuk elemen di luar card kalau masih dipakai) ===== */
+.tag-badge {
     display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .cat-tag {
-    background-color: #fce7f3;
-    color: #db2777;
+    background: #ede9fe;
+    color: #6d28d9;
 }
 
 .taste-tag {
-    background-color: #dcfce7;
-    color: #15803d;
+    background: #fef3c7;
+    color: #92400e;
 }
 
 .count-badge {
-    background-color: #e0f2fe;
-    color: #0369a1;
-    padding: 4px 10px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1c1917;
+    padding: 4px 14px;
     border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 8px rgba(251,191,36,0.3);
 }
 
-/* Pagination Info */
+/* ===== PAGINATION ===== */
 .pagination-info {
     text-align: center;
-    font-size: 0.9rem;
+    color: #78716c;
+    font-size: 0.85rem;
     font-weight: 500;
-    color: #475569;
-    line-height: 2.2rem;
+    padding: 8px 0;
+}
+
+/* ===== LOCATION TEXT===== */
+.loc-text {
+    color: #a8a29e;
+    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* ===== SECTION HEADERS ===== */
+.section-header {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.4rem;
+    color: #1c1917;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.5px;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d6d3d1; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
+
+/* ===== SIDEBAR ===== */
+[data-testid="stSidebar"] {
+    background: #fafaf9 !important;
+    border-right: 1px solid #e7e5e4 !important;
+}
+
+/* ===== FILTER AREA ===== */
+[data-testid="stSelectbox"] > div > div {
+    background: #ffffff !important;
+    border-color: #e7e5e4 !important;
+    border-radius: 10px !important;
+}
+
+/* ===== PRIMARY BUTTONS ===== */
+div.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #f59e0b, #ef4444) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: white !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(245,158,11,0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+div.stButton > button[kind="primary"]:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(245,158,11,0.4) !important;
 }

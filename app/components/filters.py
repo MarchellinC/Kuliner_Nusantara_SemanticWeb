@@ -38,6 +38,10 @@ def render_filters(provinces, categories, rasas, bahan_utamas):
             key="filter_bahan"
         )
         
+    # --- SELIPIN JARAKNYA DI SINI ---
+    st.markdown("<div style='height: 24px;'></div>", unsafe_allow_html=True)
+    # --------------------------------
+        
     bc1, bc2, bc3 = st.columns([1, 1, 4])
     
     with bc1:

@@ -1,0 +1,7 @@
+PREFIX kuliner: <http://example.org/kuliner/>
+
+SELECT DISTINCT ?bahan
+WHERE {
+    ?makanan kuliner:bahanUtama ?bahan .
+}
+ORDER BY ?bahan

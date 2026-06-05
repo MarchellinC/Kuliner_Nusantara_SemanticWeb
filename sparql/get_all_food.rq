@@ -1,0 +1,8 @@
+PREFIX kuliner: <http://example.org/kuliner/>
+
+SELECT ?makanan ?provinsi ?kategori ?rasa
+WHERE {
+    ?makanan kuliner:berasalDari ?provinsi ;
+              kuliner:kategori ?kategori ;
+              kuliner:rasa ?rasa .
+}

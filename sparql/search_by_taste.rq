@@ -1,0 +1,7 @@
+PREFIX kuliner: <http://example.org/kuliner/>
+
+SELECT DISTINCT ?rasa
+WHERE {
+    ?makanan kuliner:rasa ?rasa .
+}
+ORDER BY ?rasa

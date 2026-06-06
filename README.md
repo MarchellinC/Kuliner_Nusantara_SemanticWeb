@@ -1,5 +1,11 @@
 # Sistem Pencarian Semantik Kuliner Tradisional Nusantara Berbasis RDF dan SPARQL
 
+## Demo Aplikasi
+
+Aplikasi dapat diakses secara online melalui:
+
+🔗 https://kulinernusantarasemanticweb.streamlit.app/
+
 ## Deskripsi Proyek
 
 Proyek ini bertujuan untuk membangun sistem pencarian semantik informasi kuliner tradisional Nusantara menggunakan teknologi Semantic Web. Data kuliner yang awalnya disimpan dalam format CSV dikonversi menjadi RDF (Resource Description Framework) dan direpresentasikan menggunakan ontology sehingga dapat diproses menggunakan SPARQL.
@@ -201,3 +207,13 @@ Buka browser dan akses:
 ```text
 http://localhost:8501
 ```
+
+### 7. Menggunakan Light Mode
+
+Untuk mendapatkan tampilan yang sesuai dengan desain aplikasi, gunakan tema **Light Mode** pada Streamlit.
+
+Jika aplikasi terbuka dalam Dark Mode:
+
+1. Klik **⋮** pada pojok kanan atas.
+2. Pilih **Settings**.
+3. Ubah **Theme** menjadi **Light**.

@@ -13,6 +13,7 @@ from components.hero import render_hero
 from components.filters import render_filters
 from components.result_cards import render_food_cards
 from components.detail_panel import render_detail_panel
+from components.knowledge_graph import render_knowledge_graph
 
 # Set page config
 st.set_page_config(
@@ -106,5 +107,6 @@ with col1:
 
 with col2:
     render_detail_panel(st.session_state.selected_food_details)
+    render_knowledge_graph(st.session_state.selected_food_details)
 
 st.markdown('</div>', unsafe_allow_html=True)

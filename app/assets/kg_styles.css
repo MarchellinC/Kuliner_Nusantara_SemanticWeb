@@ -1,0 +1,25 @@
+.kg-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.04);
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+.kg-header {
+    padding: 1.4rem 1.6rem 1.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    background: linear-gradient(135deg, #fff7ed, #fdf2f8 55%, #f0fdf4);
+}
+.kg-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1c1917;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+}
+.kg-body {
+    padding: 1.2rem 1.6rem;
+    min-height: 500px;
+    background: #ffffff;
+}

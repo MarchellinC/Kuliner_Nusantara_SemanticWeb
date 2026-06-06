@@ -133,13 +133,52 @@ plotly
 
 ### 4. Jalankan Apache Jena Fuseki
 
-Pastikan Apache Jena Fuseki telah berjalan dan dataset RDF kuliner telah dimuat ke dalam server Fuseki.
+Pastikan Apache Jena Fuseki telah terinstal pada sistem.
 
-Contoh endpoint SPARQL yang digunakan:
+Masuk ke direktori Apache Jena Fuseki:
+
+```bash
+cd apache-jena-fuseki-<versi>
+```
+
+Jalankan Fuseki menggunakan perintah:
+
+```bash
+.\fuseki-server.bat
+```
+
+atau
+
+```bash
+fuseki-server.bat
+```
+
+Setelah Fuseki berhasil dijalankan, buka browser dan akses:
+
+```text
+http://localhost:3030
+```
+
+Buat dataset baru dengan nama:
+
+```text
+kuliner
+```
+
+Kemudian upload file RDF Turtle yang tersedia pada repository:
+
+```text
+data/rdf/kuliner_nusantara.ttl
+```
+
+Setelah proses upload selesai, endpoint SPARQL yang digunakan oleh aplikasi akan tersedia pada:
 
 ```text
 http://localhost:3030/kuliner/query
 ```
+
+Pastikan endpoint tersebut dapat diakses sebelum menjalankan aplikasi Streamlit.
+
 
 ### 5. Menjalankan Aplikasi Streamlit
 

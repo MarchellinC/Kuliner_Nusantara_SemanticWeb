@@ -1,6 +1,6 @@
 # Sistem Pencarian Semantik Kuliner Tradisional Nusantara Berbasis RDF dan SPARQL
 
-## Demo Aplikasi
+## Akses Aplikasi
 
 Aplikasi dapat diakses secara online melalui:
 
@@ -75,7 +75,7 @@ Berisi aplikasi berbasis Streamlit yang digunakan sebagai antarmuka pengguna unt
 
 ### document
 
-Berisi dokumentasi proyek, laporan, diagram, dan kebutuhan pendukung lainnya.
+Berisi dokumentasi proyek, laporan, dan kebutuhan pendukung lainnya.
 
 ## Alur Pengolahan Data
 
@@ -99,7 +99,7 @@ Dataset CSV
 * Streamlit
 
 
-## Instalasi dan Menjalankan Aplikasi
+## Panduan Instalasi dan Menjalankan Aplikasi
 
 ### 1. Clone Repository
 
@@ -217,3 +217,61 @@ Jika aplikasi terbuka dalam Dark Mode:
 1. Klik **⋮** pada pojok kanan atas.
 2. Pilih **Settings**.
 3. Ubah **Theme** menjadi **Light**.
+
+
+## Panduan Penggunaan Website
+
+Setelah aplikasi berhasil dijalankan, Anda dapat menggunakan fitur-fitur yang tersedia dengan mengikuti langkah-langkah berikut.
+
+### 1. Buka Website
+
+Akses aplikasi melalui browser menggunakan salah satu alamat berikut:
+
+* **Online Demo:** https://kulinernusantarasemanticweb.streamlit.app/
+* **Local:** http://localhost:8501
+
+### 2. Baca Informasi Proyek
+
+Pada bagian **sidebar** terdapat informasi singkat mengenai proyek beserta teknologi yang digunakan. Pengguna juga dapat melihat statistik dataset yang digunakan pada aplikasi.
+
+### 3. Jelajahi Daftar Kuliner
+
+Saat aplikasi pertama kali dibuka, akan ditampilkan daftar berbagai kuliner tradisional Nusantara dalam bentuk **card**.
+![Daftar Makanan](document/image/daftar_makanan.png)
+
+### 4. Gunakan Pencarian dan Filter
+
+Pengguna dapat mencari makanan tertentu menggunakan kolom pencarian atau mengombinasikan beberapa filter berikut:
+
+* **Provinsi** → mencari makanan berdasarkan daerah asal.
+* **Kategori** → memilih jenis hidangan.
+* **Rasa** → mencari makanan berdasarkan cita rasa.
+* **Bahan Utama** → mencari makanan berdasarkan bahan dominan.
+![Pencarian dan Filter Makanan](document/image/pencarian_filter.png)
+
+### 5. Cari atau Reset
+
+* Klik **Cari** untuk menampilkan hasil sesuai filter yang dipilih.
+* Klik **Reset** untuk menghapus seluruh filter dan menampilkan kembali seluruh data kuliner.
+
+### 6. Lihat Detail Makanan
+
+Klik salah satu **card makanan** pada hasil pencarian untuk menampilkan informasi lengkap yang meliputi:
+
+* Nama makanan
+* Provinsi asal
+* Kategori
+* Cita rasa
+* Bahan utama
+![Detail Makanan](document/image/detail_makanan.png)
+
+### 7. Lihat Knowledge Graph
+
+Di bawah panel detail akan ditampilkan **Knowledge Graph** interaktif yang menggambarkan hubungan antara makanan dengan provinsi asal, kategori, cita rasa, dan bahan utama berdasarkan RDF Knowledge Graph yang tersimpan pada Apache Jena Fuseki.
+![Knowledge Graph](document/image/knowledge_graph.png)
+
+
+## Contoh Hasil Pencarian
+
+Berikut merupakan contoh tampilan aplikasi setelah pengguna melakukan pencarian. Pengguna dapat melihat daftar hasil pencarian pada sisi kiri, informasi detail makanan pada sisi kanan, serta visualisasi Knowledge Graph yang menggambarkan hubungan antara makanan dengan provinsi asal, kategori, cita rasa, dan bahan utama.
+![Hasil Pencarian](document/image/hasil_pencarian.png)

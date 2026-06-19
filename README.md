@@ -263,11 +263,13 @@ Klik salah satu **card makanan** pada hasil pencarian untuk menampilkan informas
 * Kategori
 * Cita rasa
 * Bahan utama
+
 ![Detail Makanan](document/image/detail_makanan.png)
 
 ### 7. Lihat Knowledge Graph
 
 Di bawah panel detail akan ditampilkan **Knowledge Graph** interaktif yang menggambarkan hubungan antara makanan dengan provinsi asal, kategori, cita rasa, dan bahan utama berdasarkan RDF Knowledge Graph yang tersimpan pada Apache Jena Fuseki.
+
 ![Knowledge Graph](document/image/knowledge_graph.png)
 
 
